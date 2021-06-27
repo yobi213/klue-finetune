@@ -8,5 +8,6 @@ inference : python inference_test.py
 model : [huggingface hub](https://huggingface.co/yobi)
 
 ---------------------------------------------------
+## References
 
-reference : Huffon/klue-transformers-tutorial
+Huffon/klue-transformers-tutorial
