@@ -1,11 +1,10 @@
 # klue-finetune
 
 
-train : python classification_ynat.py
+- topic-classification : finetuing roberta-base on klue-ynat datasets
+   
+- sentence-transformers : finetuing roberta-base on klue-sts datasets and add dimensionality reduction
 
-inference : python inference_test.py
-
-model : [huggingface hub](https://huggingface.co/yobi)
 
 ---------------------------------------------------
 ## References
