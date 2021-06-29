@@ -65,9 +65,10 @@ model_base.fit(
 
 ## Continue training from model_base, embedding : 256
 
-#embedding_down = models.Transformer("./model/model_base")
-embedding_down = model_base
-pooling_down = models.Pooling(embedding_down.get_word_embedding_dimension())
+# embedding_down = models.Transformer("./model/model_base/0_Transformer")
+# pooling_down = models.Pooling(embedding_down.get_word_embedding_dimension())
+embedding_down = model_base[0]
+pooling_down = model_base[1]
 dense_down = models.Dense(in_features=pooling_down.get_sentence_embedding_dimension(), out_features=256, activation_function=nn.Tanh())
 model_down = SentenceTransformer(modules=[embedding_down,pooling_down,dense_down])
 train_loss = losses.CosineSimilarityLoss(model=model_down)
