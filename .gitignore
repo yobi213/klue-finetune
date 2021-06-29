@@ -134,3 +134,4 @@ wandb
 runs
 output
 model
+*.ipynb
