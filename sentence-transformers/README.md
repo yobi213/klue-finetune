@@ -9,7 +9,6 @@ sentence-transformers model
 3. load model
 ```
 from sentence_transformers import SentenceTransformer
-from sklearn.metrics.pairwise import cosine_similarity
 model = SentenceTransformer('klue-roberta-base-sts-256dim')
 ```
 
