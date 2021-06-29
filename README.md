@@ -3,11 +3,11 @@
 
 - topic-classification 
   
-  fine-tuning a roberta-base model on klue-ynat datasets
+  fine-tuning roberta-base model on klue-ynat datasets
    
 - sentence-transformers 
  
-   fine-tuning a roberta-base model on klue-sts datasets and add a dense layer to reduce sentence embedding size
+   fine-tuning roberta-base model on klue-sts datasets and add dense layer to reduce sentence embedding size
 
 
 ---------------------------------------------------
