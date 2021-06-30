@@ -4,7 +4,7 @@
 ## Model
 
 sentence-transformers model 
-1. [download](https://drive.google.com/file/d/13iNZAp1CR125WxOkO11bPAmk9Y8izs_q/view?usp=sharing)
+1. [download](https://drive.google.com/file/d/1fxboV46dpG5BIZTpslXZ0KRIzXoVlt7_/view?usp=sharing)2. 
 2. unzip klue-roberta-base-sts-256dim.zip
 3. load model
 ```
