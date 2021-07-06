@@ -1,11 +1,48 @@
 # Sentence Transformers
 
-
 ## Model
 
-sentence-transformers model 
-1. [download](https://drive.google.com/file/d/1fxboV46dpG5BIZTpslXZ0KRIzXoVlt7_/view?usp=sharing). 
-2. unzip klue-roberta-base-sts-256dim.zip
+sentence-transformers model, embedding_size=768
+
+## Usage
+
+```
+from sentence_transformers import SentenceTransformer, models
+embedding_model = models.Transformer("yobi/klue-roberta-base-sts")
+pooling_model = models.Pooling(
+    embedding_model.get_word_embedding_dimension(),
+    pooling_mode_mean_tokens=True,
+)
+model = SentenceTransformer(modules=[embedding_model,  pooling_model])
+model.encode("안녕하세요.", convert_to_tensor=True)
+```
+
+## Architecture
+
+### 0_Transformer
+
+klue-Roberta-base https://huggingface.co/klue/roberta-base
+
+### 1_Pooling
+
+768 dimensions, mean-pooling 
+
+### 2_Dense
+
+768 dimensions-> 256 dimensions, dimensionality reduction
+
+## Training
+
+python train_sts_kor_klue.py --down_size=True
+
+## Model_downsize
+
+sentence-transformers model, embedding_size=256
+
+## Usage
+
+1. [download](https://drive.google.com/file/d/19qgRX4FI83VPiqivIvm09gSxHqvOp5zt/view?usp=sharing). 
+2. unzip klue-roberta-base-sts-256.zip
 3. load model
 ```
 from sentence_transformers import SentenceTransformer
@@ -28,8 +65,6 @@ klue-Roberta-base https://huggingface.co/klue/roberta-base
 
 ## Training
 
-train_sts_dim_reduction.py
+python train_sts_kor_klue.py --down_size=True
 
-1. [klue-Roberta-base + Pooling layer] 구조의 모델을 klue-sts 데이터셋으로 학습
-2. 위 모델에 차원 축소를 위한 dense layer를 추가하여 같은 데이터셋으로 학습
 

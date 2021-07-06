@@ -7,7 +7,7 @@
    
 - sentence-transformers 
  
-   fine-tuning klue/roberta-base model on klue/sts datasets and add dense layer to reduce sentence embedding size
+   fine-tuning klue/roberta-base model on klue/sts and kor_nlu/sts datasets 
 
 
 ---------------------------------------------------
