@@ -37,7 +37,7 @@ sentence-transformers model, embedding_size=256
 
 ### Usage
 
-1. [download](https://drive.google.com/file/d/19qgRX4FI83VPiqivIvm09gSxHqvOp5zt/view?usp=sharing). 
+1. [download](https://drive.google.com/file/d/19qgRX4FI83VPiqivIvm09gSxHqvOp5zt/view?usp=sharing)
 2. unzip klue-roberta-base-sts-256.zip
 3. load model
 ```
