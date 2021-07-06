@@ -123,6 +123,7 @@ if __name__ == "__main__":
             output_path=model_save_path,
             optimizer_params = {'lr': 2e-05}
             )
+        test_evaluator(model, output_path=model_save_path)
     else:
         model_save_path = "model/model_base"
         embedding_model = models.Transformer("klue/roberta-base")
@@ -143,4 +144,4 @@ if __name__ == "__main__":
             output_path=model_save_path,
             optimizer_params = {'lr': 2e-05}
         )
-
+        test_evaluator(model, output_path=model_save_path)
