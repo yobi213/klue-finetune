@@ -1,6 +1,6 @@
 # Sentence Transformers
 
-## Model
+## Model_base
 
 sentence-transformers model, embedding_size=768
 
@@ -27,13 +27,9 @@ klue-Roberta-base https://huggingface.co/klue/roberta-base
 
 768 dimensions, mean-pooling 
 
-### 2_Dense
-
-768 dimensions-> 256 dimensions, dimensionality reduction
-
 ## Training
 
-python train_sts_kor_klue.py --down_size=True
+python train_sts_kor_klue.py
 
 ## Model_downsize
 
