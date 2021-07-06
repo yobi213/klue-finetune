@@ -37,12 +37,12 @@ sentence-transformers model, embedding_size=256
 
 ### Usage
 
-1. [download](https://drive.google.com/file/d/19qgRX4FI83VPiqivIvm09gSxHqvOp5zt/view?usp=sharing)
+1. [download model](https://drive.google.com/file/d/19qgRX4FI83VPiqivIvm09gSxHqvOp5zt/view?usp=sharing)
 2. unzip klue-roberta-base-sts-256.zip
 3. load model
 ```
 from sentence_transformers import SentenceTransformer
-model = SentenceTransformer('./klue-roberta-base-sts-256dim')
+model = SentenceTransformer('./klue-roberta-base-sts-256')
 ```
 
 ### Architecture
@@ -57,7 +57,7 @@ klue-Roberta-base https://huggingface.co/klue/roberta-base
 
 #### 2_Dense
 
-768 dimensions-> 256 dimensions, dimensionality reduction
+768 dimensions-> 256 dimensions
 
 ### Training
 
